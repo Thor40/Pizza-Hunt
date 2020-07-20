@@ -20,7 +20,7 @@ const commentController = {
         })
         .then(dbPizzaData => {
             if (!dbPizzaData) {
-                res.status(404).josn({ message: 'No pizza found with this id!' });
+                res.status(404).json({ message: 'No pizza found with this id!' });
                 return;
             }
             // respond with updated pizza data with comment
